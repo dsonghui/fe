@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <title>flex 布局 </title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 600px;
+            margin: 10px auto;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        .container div {
+            width: 100px;
+            background: #c97109;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <script type="application/javascript">
+        window.onload=function (){
+            let divs = document.body.querySelectorAll('.container div');
+
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="div1">1</div>
+    <div class="div2">2</div>
+    <div class="div3">3</div>
+    <div class="div4">4</div>
+    <div class="div5">5</div>
+    <div class="div6">6</div>
+    <div class="div7">7</div>
+    <div class="div8">8</div>
+    <div class="div9">9</div>
+</div>
+</body>
+</html>

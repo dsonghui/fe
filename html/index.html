@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <title></title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" type="application/javascript"></script>
+    <style>
+        .contain {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+        .main {
+            height: 100%;
+            background: lightgreen;
+            border-radius: 100px;
+        }
+        .common {
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 100%;
+        }
+        .mask1 {
+            transform: rotate(83deg);
+            border-radius: 100px 0 0 100px;
+            left: 0;
+            transform-origin: right center;
+            background: #b82b2b;
+        }
+        .mask2 {
+            transform: rotate(-76deg);
+            transform-origin: left center;
+            left: 100px;
+            border-radius: 0 100px 100px 0;
+            background: blue;
+        }
+    </style>
+    <script type="application/javascript">
+    </script>
+</head>
+<body>
+<div class="contain">
+    <div class="main"></div>
+    <div class="mask1 common"></div>
+    <div class="mask2 common"></div>
+    <div></div>
+    <h2></h2>
+</div>
+</body>
+</html>
