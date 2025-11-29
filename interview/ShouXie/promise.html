@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+    <title></title>
+    <style>
+    </style>
+    <script type="application/javascript">
+        function MyPromise(fn, wait) {
+            let self = this;
+            self.status = 'pending' // fulfilled 、rejected
+            self.value = undefined;
+            self.reason = undefined;
+            function resolve (result){
+                if(self.status === 'pending'){
+                    self.value = result;
+                    self.status = 'fulfilled';
+                }
+            }
+            function reject (result){
+                if(self.status === 'pending'){
+                    self.reason = result;
+                    self.status = 'rejected';
+                }
+            }
+
+            try{
+                fn(resolve,reject);
+            }catch (e){
+                reject(e)
+            }
+
+        }
+        MyPromise.prototype.then = function () {
+            
+        }
+
+    </script>
+</head>
+<body>
+<div class="container">
+</div>
+</body>
+</html>

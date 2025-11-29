@@ -1,0 +1,16 @@
+<html>
+<head>
+<script>
+  function drawCircle() {
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+  }
+</script>
+</head>
+<body onload="drawCircle();">
+  <canvas id="myCanvas" width="200" height="100"></canvas>
+</body>
+</html>
